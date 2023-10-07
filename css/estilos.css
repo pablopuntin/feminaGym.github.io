@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-color: rgb(163, 163, 236);
+}
+@media (max-width: 576px) {
+  body{
+    background-color: rgb(110, 105, 105);
+  }
+ 
+
+}
+
+
+@media (max-width: 576px) {
+  
+  h1{
+    font-size: 1em;
+  }
+  .redes{
+    margin: 2px;
+    height: 75px;
+    width: auto;
+  }
+  h2{
+    font-size: 0.75em;
+
+  }
+
+  h4{
+    font-size: 0.5em;
+  }
+    }
+
+   
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(222, 183, 164);
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: "Courier New";
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  
+
+
+.carousel-item{
+    height: 60vh;
+}
+.logo{
+    height: 1px;
+    width: 1px;
+}
+.encabezado{
+    height: 90vh;
+  background-size: cover;
+  background-image: url("../img/frente.jpeg") ;
+}
+img{
+    width: 50vh;
+    height: 60vh;
+}

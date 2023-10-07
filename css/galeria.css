@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+carousel-item{
+    height: 60vh;
+}
+.logo{
+    height: 1px;
+    width: 1px;
+}
+.encabezado{
+    height: 90vh;
+  background-size: cover;
+  background-image: url("../img/frente.jpeg") ;
+}
+img{
+    width: 50vh;
+    height: 60vh;
+}
