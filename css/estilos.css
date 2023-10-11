@@ -7,13 +7,18 @@
 body{
     background-color: rgb(163, 163, 236);
 }
+.redes{
+  margin: 2px;
+  height: 15vh;
+}
+
+
+
 @media (max-width: 576px) {
   body{
-    background-color: rgb(110, 105, 105);
+    background-color: rgb(78, 71, 71);
   }
- 
-
-}
+ }
 
 
 @media (max-width: 576px) {
@@ -22,8 +27,8 @@ body{
     font-size: 1em;
   }
   .redes{
-    margin: 2px;
-    height: 75px;
+    margin: 3px;
+    height: 45px;
     width: auto;
   }
   h2{
@@ -31,7 +36,7 @@ body{
 
   }
 
-  h4{
+  p{
     font-size: 0.5em;
   }
     }
