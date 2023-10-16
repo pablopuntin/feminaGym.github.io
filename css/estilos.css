@@ -12,6 +12,32 @@ body{
   height: 15vh;
 }
 
+/*whats flotante*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/*fin whats flotante*/
+
 
 
 @media (max-width: 576px) {
@@ -40,8 +66,25 @@ body{
     font-size: 0.5em;
   }
     }
+    .horario{
+      font-size: 1rem;
+      border: 1px solid rgb(238, 139, 222);
+    }
 
-   
+    /*media del cuadro horario*/
+    @media (max-width: 576px) {
+      .horario{
+        font-size: 0.6em;
+        border: 1px solid rgb(241, 228, 223);
+      }
+    }
+
+    @media (max-width: 405px) {
+      .horario{
+        font-size: 0.4em;
+        border: 1px solid rgb(50, 37, 33);
+      }
+    }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
