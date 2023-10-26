@@ -1,16 +1,41 @@
 *{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.encabezado{
+  height: 90vh;
+  background-size: cover;
+  background-image: url("../img/frente.jpeg") ;
+  background-repeat: repeat;
+  
+}
+}
+
+.fila{
+  border: 2px solid black;
+  height: 280px;
+  background-color: #999;
+}
+
+.functionaImg{
+  
+  height: 180px;  
 
 }
-body{
-    background-color: rgb(163, 163, 236);
+/*
+.femina{
+  border: 2px solid gray;
+  position: relative;
+  top:10vh;
+  left: 16%;
 }
 .redes{
   margin: 2px;
   height: 15vh;
-}
+}*/
 
 /*whats flotante*/
 .float{
@@ -37,7 +62,6 @@ body{
 	margin-top:16px;
 }
 /*fin whats flotante*/
-
 
 
 @media (max-width: 576px) {
@@ -121,11 +145,6 @@ h1 {
 .logo{
     height: 1px;
     width: 1px;
-}
-.encabezado{
-    height: 90vh;
-  background-size: cover;
-  background-image: url("../img/frente.jpeg") ;
 }
 img{
     width: 50vh;
