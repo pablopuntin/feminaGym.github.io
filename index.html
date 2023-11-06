@@ -7,14 +7,17 @@
     <meta name="author" content="Pablo Puntin">
     <meta name="description" content="Gym, Añatuya, gimnasio, Santiago del Estero, Femina Gym">
     
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     
+    <!--script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script src="js/index.js"></script>  
 
     <title>Femina Gym</title>
 </head>
-<body id="cuerpo">
+<body>
     <!--NAVBAR-->
     <section class="sticky-top">    
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -27,9 +30,8 @@
         <a class="nav-link active" aria-current="page" href="#">INICIO</a>
         <a class="nav-link" href="">Entrenamientos</a>
         <a class="nav-link" href="galeria.html">Galeria</a>
-        <button id="oscuro">Modo oscuro</button>
-        
       </div>
+      <button id="oscuro">Modo oscuro</button>
     </div>
   </nav>
   
@@ -134,12 +136,12 @@
 
     <section class="container fila">
       <div class="row ">
-        <div class="col-lg-6 text-center contenedor"><img src="img/bodyMotion.jpeg" alt="" class="img-fluid functionaImg">
+        <div class="col-xl-6 col-md-6 text-center contenedor"><img src="img/funcional.jpeg" alt="" class="img-fluid functionaImg">
           
         </div>
         
         
-        <div class="col-lg-4 femina">
+        <div class="col-xl-5 col-md-4 femina">
           <img src="img/logo1.png" alt="" class="img-fluid">
           <h3>functiona Training</h3>
           <div class="row">
@@ -153,7 +155,7 @@
     </section>
 
     
-    <!--formulario-->
+    <!--formulario
     <div class="container">
       <div class="row">
           <div class="col-md-12">
@@ -207,7 +209,92 @@
           </div>
       </div>
   </div>
-    
+    -->
+
+    <!-- Cards -->
+    <div class="container" style="padding-top: 8rem;">
+
+      <div class="row justify-content-md-center g-1">
+          <div class="col-3" style="width: 13rem;">
+              <div class="card border border-primary p-1">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Tres clases por semana</h5>
+                      <p class="card-text">Tienen un descuento</p>
+                      <p class="card-text fw-bold">5%</p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-3" style="width: 13rem;">
+              <div class="card border border-success p-1">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Cinco clases por semana</h5>
+                      <p class="card-text">Tienen un descuento</p>
+                      <p class="card-text fw-bold">10%</p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-3" style="width: 13rem;">
+              <div class="card border border-warning p-1">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Personalizados full</h5>
+                      <p class="card-text">Tienen un descuento</p>
+                      <p class="card-text fw-bold">3%</p>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Form -->
+  <div class="container w-50 pt-2">
+      <!-- Texto superior del formulario -->
+      <div class="text-center">
+          <p class="m-0"><sup>VENTA</sup>
+          <h2>VALOR DE LA CUOTA $..</h2>
+          </p>
+      </div>
+      
+      <!-- Formulario -->
+      <form class="row g-1 gx-2 formulario" id="formulario">
+          <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="Apellido">
+          </div>
+          <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+          </div>
+          <div class="col-md-6 mb-3">
+              <label for="cantidad" class="form-label">Cantidad</label>
+              <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+          </div>
+          <div class="col-md-6 mb-3">
+              <label for="cantidad" class="form-label">Categoría</label>
+              <select id="categoria" class="form-select">
+                  <option value="">Sin categoria</option>
+                  <option value="estudiante">TRES CLASES</option>
+                  <option value="trainee">CINCO CLASES</option>
+                  <option value="junior">PERSONALIZADO</option>
+              </select>
+          </div>
+          <div class="mb-3">
+              <p class="alert alert-primary" id="totalAPagar">Total a Pagar: $</p>
+          </div>
+
+          <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn text-white fs-6 btnBorrar" style="background-color: #96c93e;"
+                  type=" button" id="borrar">Borrar</button>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn text-white fs-6 btnResumen" style="background-color: #96c93e;"
+                  type=" button" id="resumen">Resumen</button>
+          </div>
+      </form>
+  </div>
 
 
 
@@ -262,8 +349,5 @@
 
 
 
-    <!--script bootstrap-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
- <script src="js/index.js"></script>  
 </body>
 </html>
