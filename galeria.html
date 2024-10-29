@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
     <link rel="stylesheet" href="css/galeria.css">
 
-    <title>Femina Gym</title>
+    <title>FEMINA</title>
 </head>
 <body>
 
@@ -29,10 +34,10 @@
     
     </section>
     <!--FIN NAVBAR-->
-
- <!--Galeria-->
- <section class="container-fluid">
-  <div class="row">
+    
+    <!--Galeria
+    <section class="container-fluid">
+      <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-4"><a href='#!'><img id="myImg1" class="img-galeria" src="img/img01.jpeg" alt="Imagen de Galeria"></a>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4"><a href='#!'><img id="myImg2" class="img-galeria" src="img/img02.jpeg" alt="Imagen de Galeria"></a>
@@ -69,11 +74,54 @@
   </div>  
 
  </section>
+-->
+ 
+<!--galeria con modal prueba-->
+<!--Galeria-->
+<section class="container-fluid bg-dark" id="galeria">
+  <h2 class="text-white text-center display-4">Galeria</h2>
+ 
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg1" class="img-galeria" src="img/img1.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg2" class="img-galeria" src="img/img2.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg3" class="img-galeria" src="img/img3.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg4" class="img-galeria" src="img/img4.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg5" class="img-galeria" src="img/img5.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg6" class="img-galeria" src="img/img6.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg7" class="img-galeria" src="img/img7.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg8" class="img-galeria" src="img/img8.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg9" class="img-galeria" src="img/img9.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg10" class="img-galeria" src="img/img10.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg11" class="img-galeria" src="img/img11.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg12" class="img-galeria" src="img/img12.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg13" class="img-galeria" src="img/img13.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg14" class="img-galeria" src="img/img14.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg15" class="img-galeria" src="img/img15.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg16" class="img-galeria" src="img/img16.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg17" class="img-galeria" src="img/img17.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg18" class="img-galeria" src="img/img18.jpeg" alt="" onclick="prueba(this)"></div>
+  </div>
+</div>
+</section>
+
+
+
 
  <!--Modal o contenedor de pantalla completa para las imagenes-->
 
+ <div id="myModal" class="modal">
 
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div> 
+
+<!--FIN MODAL-->
 
 
 
@@ -121,7 +169,8 @@
   
   
       <!--script bootstrap-->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="js/galeria.js"></script>
 
     
 </body>
